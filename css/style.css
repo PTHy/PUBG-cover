@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 52px;
+  background-color: black;
+}
+
+.link > li > a{
+  color: white;
+  text-align: center;
+  margin-top : 20px;
+}
+
+.link {
+  margin-left: 50px;
+}
+
+.link > li{
+  display: inline-block;
+  background-color: gray;
+  height: 52px;
+  margin-left:
+}
