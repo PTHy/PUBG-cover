@@ -10,22 +10,46 @@ ul {
 
 header {
   height: 52px;
-  background-color: black;
+  background-color: #555;
 }
 
-.link > li > a{
+.link > a:first-child{
+  border-left: 1px solid #060606;
+}
+
+.link > a{
   color: white;
   text-align: center;
-  margin-top : 20px;
+  line-height: 50px;
+  display: inline-block;
+  height: 52px;
+  border-right: 1px solid #060606;
 }
 
 .link {
-  margin-left: 50px;
+  display: inline-block;
+  margin-left: 60px;
 }
 
-.link > li{
+.etc {
   display: inline-block;
-  background-color: gray;
-  height: 52px;
-  margin-left:
+  float: right;
+  margin-right: 300px;
+  max-height: 52px;
+  font-size: 27px;
+  margin right: 300px;
+  line-height: 50px;
+}
+
+.etc > li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.symbol {
+  color: gray;
+}
+
+.symbol:hover{
+  color: white;
 }
