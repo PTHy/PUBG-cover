@@ -10,7 +10,8 @@ ul {
 
 header {
   height: 52px;
-  background-color: #555;
+  color: #555;
+  background: url(https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/bg_header.gif) center 0;
 }
 
 .link > a:first-child{
@@ -18,25 +19,30 @@ header {
 }
 
 .link > a{
-  color: white;
+  color: #a8a8a8;
   text-align: center;
   line-height: 50px;
   display: inline-block;
   height: 52px;
+  width: 102px;
   border-right: 1px solid #060606;
+  font-size: 15px;
 }
 
 .link {
+  background: url(https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/bg_header2.gif) center 0;
+  float: left;
   display: inline-block;
   margin-left: 60px;
 }
 
 .etc {
+  width: 250px;
   display: inline-block;
   float: right;
-  margin-right: 300px;
+  margin-right: 50px;
   max-height: 52px;
-  font-size: 27px;
+  font-size: 23px;
   margin right: 300px;
   line-height: 50px;
 }
@@ -47,9 +53,25 @@ header {
 }
 
 .symbol {
-  color: gray;
+  color: #555;
 }
 
 .symbol:hover{
   color: white;
+}
+
+.flag {
+  line-height: 52px;
+  float: right;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.flag_main {
+  border-left: 1px solid #060606;
+  border-right: 1px solid #060606;
+}
+
+.flag_list,.flag_selected{
+  display : none;
 }
