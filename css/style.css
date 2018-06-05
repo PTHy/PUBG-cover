@@ -43,7 +43,6 @@ header {
   margin-right: 50px;
   max-height: 52px;
   font-size: 23px;
-  margin right: 300px;
   line-height: 50px;
 }
 
@@ -65,13 +64,57 @@ header {
   float: right;
   display: inline-block;
   margin-right: 30px;
+  font-size: 12px;
 }
 
 .flag_main {
+  height: 51px;
+  width: 200px;
+  color: white;
   border-left: 1px solid #060606;
   border-right: 1px solid #060606;
+  cursor : pointer;
+}
+
+.flag:hover .flag_list, .flag:hover .flag_selected {
+  display : block;
+}
+
+.flag:hover .arrow {
+  transform: rotate: ;(180deg);
+}
+
+.flag_list,.flag_selected {
+    background: url(https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/bg_header2.gif) center 0;
+    cursor: pointer;
+}
+
+.flag_selected {
+  color: #f19f00;
+}
+
+.flag_list:hover {
+  color: white;
+}
+
+.flag_img {
+  height: 11px;
+  width: 16px;
+  display: inline-block;
+  padding:0 10px;
 }
 
 .flag_list,.flag_selected{
+  height: 40px;
+  width: 165px;
   display : none;
+}
+
+.flag_main > .arrow {
+  margin-left: 5px;
+  color: red;
+  padding: 0 7px;
+  padding-top : 8px;
+  padding-bottom : 2px;
+  background-color: #212121;
 }
