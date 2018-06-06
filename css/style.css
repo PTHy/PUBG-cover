@@ -4,6 +4,15 @@
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'pubg';
+  src: url("../font/Battleground.ttf");
+}
+
+body {
+  font-size: 12px;
+}
+
 ul {
   list-style: none;
 }
@@ -26,14 +35,14 @@ header {
   height: 52px;
   width: 102px;
   border-right: 1px solid #060606;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .link {
   background: url(https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/bg_header2.gif) center 0;
   float: left;
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 35px;
 }
 
 .etc {
@@ -65,6 +74,7 @@ header {
   display: inline-block;
   margin-right: 30px;
   font-size: 12px;
+  pointer-events: all;
 }
 
 .flag_main {
@@ -81,7 +91,7 @@ header {
 }
 
 .flag:hover .arrow {
-  transform: rotate: ;(180deg);
+  transform: rotate(180deg);
 }
 
 .flag_list,.flag_selected {
@@ -95,6 +105,11 @@ header {
 
 .flag_list:hover {
   color: white;
+}
+
+.background_video {
+   width : 640px;
+   height : 360px;
 }
 
 .flag_img {
@@ -112,9 +127,89 @@ header {
 
 .flag_main > .arrow {
   margin-left: 5px;
-  color: red;
+  color: #7f141d;
   padding: 0 7px;
-  padding-top : 8px;
-  padding-bottom : 2px;
+  padding-top : 2px;
+  padding-bottom : 5px;
   background-color: #212121;
+}
+
+#test { width: 1519.200px; height: 858.338px; z-index: -2 !important; position: absolute;}
+
+.background_media {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#content_header {
+  /* background-color: orange; */
+  width: 95%;
+  height: 90px;
+  /* margin: 0 2.5%; */
+  left:50%;
+  transform: translateX(-50%);
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#content_header > .logo {
+  display: inline-block;
+  background: url(../img/sp.png) no-repeat;
+  width: 77px;
+  height: 45px;
+  margin: 20px;
+}
+
+.nav {
+  height: 100%;
+  display: inline-block;
+  /* background-color: orange; */
+}
+
+.nav > ul > li {
+  font-family: pubg;
+  display: inline-block;
+  float: left;
+  margin: 0 17px;
+  color: white;
+  line-height: 90px;
+  font-size: 25px;
+}
+
+#content_header > .buy_btn {
+  color: white;
+  font-family: pubg;
+  line-height: 90px;
+  height: 100%;
+  background-color: orange;
+  width: 13.5%;
+  text-align: center;
+  font-size: 40px;
+  display: inline-block;
+  float: right;
+}
+
+.title > img {
+  width: 80%;
+  height: 80%;
+}
+
+.title {
+  display: inline-block;
+  color: white;
+  left: 36%;
+  margin-top: 22.5%;
+  transform: rotateX(-50%);
+  position: relative;
+}
+
+.content_banner {
+  display: inline-block;
+  background-color: orange;
+  height: 150px;
+}
+
+.content_banner > img {
+  width: 25%;
 }
