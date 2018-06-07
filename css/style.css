@@ -97,6 +97,13 @@ header {
 .flag_list,.flag_selected {
     background: url(https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/bg_header2.gif) center 0;
     cursor: pointer;
+    z-index: 999999;
+    position: relative;
+
+}
+#flag_lists {
+  position: absolute;
+  right: 30px;
 }
 
 .flag_selected {
@@ -136,7 +143,29 @@ header {
 
 #test { width: 1519.200px; height: 858.338px; z-index: -2 !important; position: absolute;}
 
-.background_media {
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+
+  }
+}
+
+#test > img {
+  opacity: 0;
+  animation: fadeOut 3s;
+  animation-iteration-count: 1;
+}
+
+#test > .background_media {
+  position: absolute;
+  top: 0;
+  z-index: -8888;
   width: 100%;
   height: 100%;
   pointer-events: none;
@@ -182,12 +211,15 @@ header {
   font-family: pubg;
   line-height: 90px;
   height: 100%;
-  background-color: orange;
+  background-color: #e69800;
   width: 13.5%;
   text-align: center;
   font-size: 40px;
   display: inline-block;
   float: right;
+  z-index: -1;
+  position: absolute;
+  right: 0;
 }
 
 .title > img {
@@ -206,10 +238,29 @@ header {
 
 .content_banner {
   display: inline-block;
-  background-color: orange;
   height: 150px;
+  text-align: center;
+  padding-top: 30px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin-top: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 2.5%;
 }
 
 .content_banner > img {
-  width: 25%;
+  width: 30%;
+}
+
+#mask_bottom {
+  position: relative;
+  bottom: -2px;
+  background: url('../img/main_mask01.png');
+  /* background-color: orange; */
+  width: 100%;
+  height: 120px;
+  overflow-y: hidden;
+  z-index: 300;
 }
