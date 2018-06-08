@@ -13,6 +13,7 @@ body {
   font-family: 'Arial', SimSun, sans-serif, 'Apple SD Gothic Neo';
   font-size: 12px;
   overflow-x: hidden;
+  background-color: #f1f1f1;
 }
 
 ul {
@@ -278,7 +279,6 @@ header {
 
 #news {
   padding: 40px 40px;
-  background-color: #f1f1f1;
   width: 100%;
   height: 800px;
   position: relative;
@@ -350,12 +350,51 @@ header {
 }
 
 #news > .announce {
-  width: 30%;
   position: absolute;
   float: right;
   top: 0;
   margin-top: 40px;
-  height: 100%;
-  background-color: black;
+  height: 105%;
+  width: 30%;
+  /* background-color: black; */
   display: inline-block;
+}
+
+.announce > ul {
+  cursor: pointer;
+  position: relative;
+}
+
+.announce > ul > li {
+  height: 172px;
+  background-color: white;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.announce > ul > li > img {
+  max-width: 170px;
+  max-height: 130px;
+  padding-left: 23px;
+  padding-top: 23px;
+  display: inline-block;
+}
+
+.announce_detail > h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.announce_detail {
+  float: right;
+  padding-top: 45px;
+  padding-right: 20px;
+  width: 250px;
+  color: #555;
+  word-break:break-all;
+  /* background-color: green; */
+}
+
+.announce > ul > li:hover {
+  background: #d98500 url('../img/bg_main_news_cnt05.png') no-repeat 100% 0;
 }
