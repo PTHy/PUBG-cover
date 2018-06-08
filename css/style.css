@@ -10,7 +10,9 @@
 }
 
 body {
+  font-family: 'Arial', SimSun, sans-serif, 'Apple SD Gothic Neo';
   font-size: 12px;
+  overflow-x: hidden;
 }
 
 ul {
@@ -49,7 +51,6 @@ header {
   width: 250px;
   display: inline-block;
   float: right;
-  margin-right: 50px;
   max-height: 52px;
   font-size: 23px;
   line-height: 50px;
@@ -57,7 +58,8 @@ header {
 
 .etc > li {
   display: inline-block;
-  margin-right: 10px;
+  margin-left: 12px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .symbol {
@@ -196,14 +198,21 @@ header {
   /* background-color: orange; */
 }
 
-.nav > ul > li {
+.nav > ul > li > a {
   font-family: pubg;
+  color: white;
+  font-size: 25px;
+}
+
+.nav > ul > li > a:hover {
+  color: #e59702;
+}
+
+.nav > ul > li {
   display: inline-block;
   float: left;
   margin: 0 17px;
-  color: white;
   line-height: 90px;
-  font-size: 25px;
 }
 
 #content_header > .buy_btn {
@@ -245,22 +254,95 @@ header {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  margin-top: 13px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 2.5%;
+  margin-top: 10px;
 }
 
 .content_banner > img {
   width: 30%;
+  cursor: pointer;
 }
 
 #mask_bottom {
   position: relative;
-  bottom: -2px;
-  background: url('../img/main_mask01.png');
+  bottom: -20px;
+  background: url('../img/main_mask01.png') no-repeat;
   /* background-color: orange; */
   width: 100%;
-  height: 120px;
+  height: 100px;
   overflow-y: hidden;
   z-index: 300;
+}
+
+#news {
+  padding: 40px 40px;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 800px;
+}
+
+#news > .article {
+  width: 65%;
+  display: inline-block;
+}
+
+#news > .article > header, #news > .announce > header {
+  background: none;
+  color: #555;
+  font-family: pubg;
+  font-size : 55px;
+  padding-bottom: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#news > .article > header:hover {
+  color: #d98500;
+}
+
+#news > .article > header > i {
+  font-size: 30px;
+}
+
+#news > .article > ul {
+  /* background-color: blue; */
+  width: 100%;
+  height: 390px;
+}
+
+#news > .article > ul > li {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#news > .article > ul > li > img {
+  width: 100%;
+  height: 65%;
+}
+
+
+#news > .article > ul > li > .detail {
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  margin-left: 30px;
+  color: #686868;
+  font-size: 14px;
+}
+
+.detail > h3 {
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+#news > .article > ul > li:hover > .detail > h3 {
+  color: #d98500;
 }
