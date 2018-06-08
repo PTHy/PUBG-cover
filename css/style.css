@@ -229,6 +229,7 @@ header {
   z-index: -1;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .title > img {
@@ -280,6 +281,7 @@ header {
   background-color: #f1f1f1;
   width: 100%;
   height: 800px;
+  position: relative;
 }
 
 #news > .article {
@@ -297,12 +299,12 @@ header {
   cursor: pointer;
 }
 
-#news > .article > header:hover {
+#news > .article > header:hover,  #news > .announce > header:hover {
   color: #d98500;
 }
 
-#news > .article > header > i {
-  font-size: 30px;
+#news > .article > header > i, #news > .announce > header > i {
+  font-size: 35px;
 }
 
 #news > .article > ul {
@@ -336,7 +338,7 @@ header {
   font-size: 14px;
 }
 
-.detail > h3 {
+#news > .article > ul > li > .detail > h3 {
   font-size: 22px;
   color: #333;
   font-weight: bold;
@@ -345,4 +347,15 @@ header {
 
 #news > .article > ul > li:hover > .detail > h3 {
   color: #d98500;
+}
+
+#news > .announce {
+  width: 30%;
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 40px;
+  height: 100%;
+  background-color: black;
+  display: inline-block;
 }
