@@ -398,3 +398,48 @@ header {
 .announce > ul > li:hover {
   background: #d98500 url('../img/bg_main_news_cnt05.png') no-repeat 100% 0;
 }
+
+#ad {
+  height: 40%;
+  background: url("../img/bg_featured_main.jpg");
+  margin-top: 100px;
+}
+
+.ad_page > .img {
+  display: inline-block;
+  max-width: 1500px;
+  max-height: 1000px;
+  position: relative;
+}
+
+.ad_page > .img_detail {
+  display: inline-block;
+  position: absolute;
+  float: right;
+  max-width: 700px;
+  max-height: 700px;
+  right: 60px;
+  margin-top: 340px;
+  z-index: 30;
+}
+
+.ad_page > div {
+  display: inline-block;
+  font-family: pubg;
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  right: 475px;
+  margin-top: 490px;
+  cursor: pointer;
+}
+
+.ad_page > ul {
+  background-color: red;
+  height: 20px;
+  width: 300px;
+  position: absolute;
+  right: 475px;
+  margin-bottom: 20px;
+  z-index: 5;
+}
