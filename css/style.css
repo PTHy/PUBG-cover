@@ -435,11 +435,45 @@ header {
 }
 
 .ad_page > ul {
-  background-color: red;
-  height: 20px;
+  height: 10px;
   width: 300px;
   position: absolute;
-  right: 475px;
-  margin-bottom: 20px;
+  right: 290px;
+  bottom: -1750px;
   z-index: 5;
+}
+
+.ad_page > ul > li {
+  width: 9%;
+  margin-left: 5px;
+  background-color: white;
+  height: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ad_page > ul > li:first-child {
+  width: 20%;
+  background-color: #d98500;
+}
+
+.twitter {
+  height: 1000px;
+  background-color: red;
+}
+
+.twitter > article {
+  padding: 70px 0;
+  display: inline-block;
+  background-color: blue;
+}
+
+.twitter > article > img {
+  max-width: 200px;
+  max-height: 60px;
+}
+
+.twitter > article > div {
+  height: 600px;
+  background-color: green;
 }
