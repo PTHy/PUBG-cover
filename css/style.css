@@ -117,11 +117,6 @@ header {
   color: white;
 }
 
-.background_video {
-   width : 640px;
-   height : 360px;
-}
-
 .flag_img {
   height: 11px;
   width: 16px;
@@ -142,6 +137,11 @@ header {
   padding-top : 2px;
   padding-bottom : 5px;
   background-color: #212121;
+}
+
+.background_video {
+   width : 640px;
+   height : 360px;
 }
 
 #test { width: 1519.200px; height: 858.338px; z-index: -2 !important; position: absolute;}
@@ -400,8 +400,8 @@ header {
 }
 
 #ad {
-  height: 40%;
-  background: url("../img/bg_featured_main.jpg");
+  background: url("../img/bg_featured_main.jpg") no-repeat 100%;
+  vertical-align: bottom;
   margin-top: 100px;
 }
 
@@ -458,22 +458,58 @@ header {
 }
 
 .twitter {
-  height: 1000px;
-  background-color: red;
+  height: 800px;
+  background-color: #f1f1f1;
+  margin-left: 200px;
 }
 
 .twitter > article {
   padding: 70px 0;
+  width: 23%;
   display: inline-block;
-  background-color: blue;
+  margin-right: 5%;
 }
 
 .twitter > article > img {
-  max-width: 200px;
-  max-height: 60px;
+  max-width: 400px;
+  max-height: 80px;
 }
 
 .twitter > article > div {
   height: 600px;
-  background-color: green;
+  background: url('../img/no_img.png');
+}
+
+footer {
+  position: relative;
+  background-color: black;
+  height: 700px;
+}
+
+footer > .cover {
+  width: 100%;
+  background: url('https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/main_mask02.jpg') no-repeat 100%;
+  height: 200px;
+  display: inline-block;
+}
+
+footer > .cover2 {
+  width: 100%;
+  background: url('https://d1wfiv6sf8d64f.cloudfront.net/static/pc/img/main_mask03.jpg') no-repeat 100%;
+  height: 80px;
+  display: inline-block;
+}
+
+footer > .etc {
+  float: left;
+  padding: 80px 80px;
+}
+
+footer > img {
+  z-index: 999;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  right: 0;
+  bottom: 70px;
 }
